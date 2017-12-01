@@ -1,5 +1,7 @@
 import importlib
 
+w3 = None
+
 for connector in ('ipc', 'http'):
     connection = importlib.import_module('web3.auto.' + connector)
     if connection.w3:
