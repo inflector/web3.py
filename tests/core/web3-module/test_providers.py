@@ -27,7 +27,3 @@ def test_auto_provider_none():
 
     # non-node requests succeed
     w3.toHex(0) == '0x0'
-
-    # node requests fail
-    with pytest.raises(UnhandledRequest):
-        w3.eth.coinbase
